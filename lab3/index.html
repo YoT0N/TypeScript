@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Система управління бібліотекою</title>
+        <link rel="stylesheet" href="./libs/bootstrap.css" />
+        <script src="dist/app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mx-auto">Система управління бібліотекою</h1>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Додати книгу</h5>
+                    <form>
+                        <div id="bookNameDiv" class="mb-3">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="bookName"
+                                placeholder="Назва книги"
+                            />
+                            <label
+                                id="bookNameLabel"
+                                style="display: none; color: red"
+                                >Це поле є обов'язковим</label
+                            >
+                        </div>
+                        <div id="authorDiv" class="mb-3">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="author"
+                                placeholder="Автор"
+                            />
+                            <label
+                                id="bookAuthorLabel"
+                                style="display: none; color: red"
+                                >Це поле є обов'язковим</label
+                            >
+                        </div>
+                        <div id="yearDiv" class="mb-3">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="yearOfPublication"
+                                placeholder="Рік видання"
+                            />
+                            <label
+                                id="bookYearLabel"
+                                style="display: none; color: red"
+                                >Це поле є обов'язковим</label
+                            >
+                        </div>
+
+                        <button id="addBook" class="btn btn-primary">
+                            Додати книгу
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Додати корисувача</h5>
+                    <form>
+                        <div id="userNameDiv" class="mb-3">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="userName"
+                                placeholder="Ім'я"
+                            />
+                            <label
+                                id="userNameLabel"
+                                style="display: none; color: red"
+                                >Це поле є обов'язковим</label
+                            >
+                        </div>
+                        <div id="userEmailDiv" class="mb-3">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="email"
+                                placeholder="Email"
+                            />
+                            <label
+                                id="emailLabel"
+                                style="display: none; color: red"
+                                >Це поле є обов'язковим</label
+                            >
+                        </div>
+
+                        <button id="addUser" class="btn btn-primary">
+                            Додати книгу
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Список книг</h5>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Список користувачів</h5>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
